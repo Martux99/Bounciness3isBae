@@ -139,7 +139,7 @@ public class trajectoryScript : MonoBehaviour {
                 ballFingerDiff.y = 3;
             }
 
-            shotForce = new Vector2 (ballFingerDiff.x * shootingPowerX, ballFingerDiff.y * shootingPowerY)/1.5f;	//The velocity of the shot is found
+            shotForce = new Vector2 (ballFingerDiff.x * shootingPowerX, ballFingerDiff.y * shootingPowerY)/1.35f;	//The velocity of the shot is found
 
 			if ((Mathf.Sqrt ((ballFingerDiff.x * ballFingerDiff.x) + (ballFingerDiff.y * ballFingerDiff.y)) > (0.4f))) { //If the distance between the finger/cursor and the "ball" is big enough...
 				trajectoryDots.SetActive (true);								//Display the trajectory

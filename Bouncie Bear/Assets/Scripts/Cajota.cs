@@ -27,11 +27,11 @@ public class Cajota : MonoBehaviour {
             player.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + 0.5f);
             if (generatedNext == false)
             {
-                gm.generateCrate(transform.position.x,transform.position.y);
+                gm.generateCrate(transform.position.x,transform.position.y,this.gameObject);
                 generatedNext = true;
 
             }
         }
     }
-
+    
 }
